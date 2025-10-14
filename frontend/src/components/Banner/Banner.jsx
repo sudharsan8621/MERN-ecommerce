@@ -10,9 +10,9 @@ function Banner() {
   const [currentSlide, setCurrentSlide] = useState(0)
   
   const banners = [
-    { image: banner1, title: 'Summer Sale', subtitle: 'Up to 50% off' },
-    { image: banner2, title: 'New Arrivals', subtitle: 'Check out latest products' },
-    { image: banner3, title: 'Free Shipping', subtitle: 'On orders over ₹999' }
+    { image: '/images/banners/banner1.jpg', title: 'Summer Sale', subtitle: 'Up to 50% off' },
+    { image: '/images/banners/banner2.jpg', title: 'New Arrivals', subtitle: 'Check out latest products' },
+    { image: '/images/banners/banner3.jpg', title: 'Free Shipping', subtitle: 'On orders over ₹999' }
   ]
 
   useEffect(() => {

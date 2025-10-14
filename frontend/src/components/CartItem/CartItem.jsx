@@ -2,7 +2,7 @@ import React from 'react'
 import './CartItem.css'
 
 function CartItem({ item, onUpdateQuantity, onRemove }) {
-  const imagePath = `/src/assets/images/products/${item.image}`
+  const imagePath = `/images/products/${item.image}`
 
   const handleQuantityChange = (newQuantity) => {
     if (newQuantity > 0) {

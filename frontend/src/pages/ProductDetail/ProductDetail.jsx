@@ -77,7 +77,7 @@ function ProductDetail() {
     dispatch(toggleWishlist(product._id))
   }
 
-  const imagePath = `/src/assets/images/products/${product.images[selectedImage]}`
+  const imagePath = `/images/products/${product.images[selectedImage]}`
 
   return (
     <div className="product-detail">
