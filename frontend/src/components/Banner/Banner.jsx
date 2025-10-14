@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import banner1 from '../../assets/images/banners/banner1.jpg'
-import banner2 from '../../assets/images/banners/banner2.jpg'
-import banner3 from '../../assets/images/banners/banner3.jpg'
 import './Banner.css'
 
 function Banner() {
