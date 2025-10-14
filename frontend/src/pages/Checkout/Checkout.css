@@ -1,0 +1,125 @@
+.checkout-page {
+  padding: 40px 0;
+  min-height: calc(100vh - 70px);
+}
+
+.checkout-page h1 {
+  margin-bottom: 30px;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 30px;
+}
+
+.checkout-section {
+  background-color: var(--card-bg);
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.checkout-section h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment-options label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.payment-options label:hover {
+  background-color: var(--bg-color);
+}
+
+.payment-options input[type="radio"] {
+  width: auto;
+  margin: 0;
+}
+
+.order-summary {
+  background-color: var(--card-bg);
+  padding: 25px;
+  border-radius: 8px;
+  height: fit-content;
+  position: sticky;
+  top: 90px;
+}
+
+.order-summary h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.order-items {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.order-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.summary-details {
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.summary-row.total {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 10px;
+  border-top: 2px solid var(--border-color);
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.pay-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .order-summary {
+    position: static;
+  }
+}

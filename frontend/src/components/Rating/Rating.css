@@ -1,0 +1,30 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin: 10px 0;
+}
+
+.star {
+  color: #ddd;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.star.filled {
+  color: #fbbf24;
+}
+
+.star.clickable {
+  cursor: pointer;
+}
+
+.star.clickable:hover {
+  color: #fbbf24;
+}
+
+.rating-value {
+  margin-left: 8px;
+  color: var(--secondary-color);
+  font-size: 14px;
+}
